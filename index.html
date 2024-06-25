@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sales point</title>
+<meta charset="utf-8"><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<!-- Ejemplos:
+https://software.castelec.mx/?caspro=gads&casnet=g&casid=120691624&kw=programa%20de%20ventas%20para%20tienda&gad_source=1&gclid=CjwKCAjw1K-zBhBIEiwAWeCOF6e0aoeMgcjzsWyZtm4RmVXQgs6amBx7fNifj4ODnZixtfAYyQ6B4xoCO_YQAvD_BwE#inicio
+https://www.sicar.mx/punto-de-venta/
+https://www.pointmeup.com/es/
+-->
+
+<body>
+
+<!-- - - - HEADER - - - -->
+
+<header>
+
+<div class="top-header"><h1>Sales Point</h1><div><a href="sesion.html"><h1>Iniciar sesión</h1></a><img src="user.png"></div></div>
+<div class="left-header"><img src="logo_1.png">
+<div class="op-head1"><a onclick="movePage(260)"><h2>Servicios</h2></a></div>
+<div class="op-head2"><a onclick="movePage(1080)"><h2>Precios</h2></a></div>
+<div class="op-head3"><a onclick="movePage(1080)"><h2>Contacto</h2></a></div></div>
+<div class="right-header"><div><a onclick="movePage(1080)"><h1>Cotización</h1></a><img src="money.png"></div></div>
+
+</header>
+
+<!-- - - - MAIN - - - -->
+
+<main>
+
+<!-- Introducción -->
+
+<section class="intro"><span>Nosotros</span>
+<span style="z-index: 2; top: -1.2rem; left: 11.4rem; background: #FAD02C;">Nosotros</span><div id="servicios">Somos una microempresa especializada en sistemas de punto de venta (POS, por sus siglas en inglés). Ofrecemos servicios para diversos sectores y nuestros precios varian según las necesidades de cada cliente. Nuestros servicios se proporcionan a través de una página web privada, donde los usuarios pueden registrar sus ventas ingresando con su usuario y contraseña desde esta misma página.
+<img src="intro.png"></div></section>
+
+<!-- Servicios -->
+
+<div>
+	
+<div class="title_serv"><div class="div_t1"></div><div class="div_t2"></div><div class="div_t3"></div>
+<div class="div_t4">Servicios para:</div><div class="div_t3"></div><div class="div_t2"></div><div class="div_t1"></div></div>
+
+<div style="width: 100%; align-items: center;"><hr class="line1"></div>
+
+<section class="serv"><table><tr>
+	<td><span>Juguetería</span><img src="jugueteria.png"></td>
+	<td><span>Comida Rapida</span><img src="comida rapida.png"></td>
+	<td><span>Ferretería</span><img src="ferreteria.png"></td>
+	<td><span>Abarrotes</span><img src="abarrotes.png"></td>
+</tr><tr>
+	<td><span>Farmacia</span><img src="farmacia.png"></td>
+	<td><span>Joyería</span><img src="joyeria.png"></td>
+	<td><span>Papelería</span><img src="papeleria.png"></td>
+	<td><span>Pastelería</span><img src="pasteleria.png"></td>
+</tr></table></section>
+
+</div>
+
+<!-- Precios & Contacto -->
+
+<article>
+
+<!-- Contacto -->
+
+<div class="cont"><div><span>Contacto</span></div>
+
+<div class="cont_tabl"><table><tr>
+	<td><img src="cor.png"></td>
+	<td>Puede contactarnos por correo a: <span>mario.pena.21-034@cetis16qro.edu.mx</span></td>
+</tr><tr>
+	<td><img src="telf.png"></td>
+	<td>Puede contactarnos por teléfono a: <span>446 150 6955 ó 442 614 5688</span></td>
+</tr></table></div>
+
+<div class="cont_last"></div>
+
+</div>
+
+<!-- Precios -->
+
+<div class="prec">
+
+<div class="title_serv"><div class="div_t1"></div><div class="div_t2"></div><div class="div_t3"></div><div class="div_t4">Precios y cotizaciones</div><div class="div_t3"></div><div class="div_t2"></div><div class="div_t1"></div></div>
+
+<div style="width: 100%; align-items: center;"><hr class="line1"></div>
+
+<div class="text_prec">Manejamos distintos precios dependiendo las necesidades de nuestros clientes, estos pueden variar desde 1,200$ hasta 2,000$. Todos nuestros servicios incluyen garantia de un año y se entrega en un plazo máximo de 30 dias.</div>
+
+<div class="img_prec"><img src="reloj.png"><img src="logo_2.png"></div>
+
+<div class="text_prec" style="margin-bottom: 1.5rem;">Además puede contratar nuestro servicio trimestral de mantenimiento, para cualquier actualización del software que se requiera (actualización de la base de datos, cambiar precios, etc).</div>
+
+</div></article>
+
+<!-- - - - FOOTER - - - -->
+
+<footer>
+
+<div><span onclick="sesion()">Iniciar sesión</span></div>
+<img src="logo.png">
+
+</footer></main>
+
+<!-- JavaScript -->
+
+<script>
+	
+function movePage(pixeles){
+window.scrollTo({
+top: pixeles,
+behavior: 'smooth' });
+}
+
+function sesion(){
+window.location="sesion.html";
+}
+
+</script>
+
+</body></html>

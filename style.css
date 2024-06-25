@@ -1,0 +1,437 @@
+
+/* - - - EVERYTHING - - - */
+
+html{
+font-size: 62.5%; }
+
+*{
+position: relative;
+margin: 0rem;
+padding: 0rem; }
+
+body{
+background-color: #D1D1D1;
+font-family: "Montserrat", sans-serif; }
+
+/* - - - HEADER - - - */
+
+header{
+z-index: 4;
+width: 100%;
+height: 17rem;
+position: fixed;
+display: grid;
+grid-template-areas: "head head head"
+					"menu menu main";
+box-shadow: -0.5rem -0.3rem 1.5rem 0rem #202442;
+}
+
+.top-header{
+width: 100%;
+height: 5rem;
+display: flex;
+grid-area: head;
+align-items: center;
+justify-content: space-around;
+background-color: #FAD02C;
+}
+
+.top-header h1{
+font-size: 3rem;
+color: #E9EAEC;
+padding-left: 2rem;
+}
+
+.top-header div{
+display: flex;
+align-items: center;
+justify-content: right;
+width: 60%;
+}
+
+.top-header div a{
+text-decoration: none;
+}
+
+.top-header div a h1{
+cursor: pointer;
+padding: 0rem;
+font-size: 2rem;
+color: #333652;
+}
+
+.top-header img{
+width: 3.5rem;
+height: 3.5rem;
+padding-inline: 1.5rem;
+}
+
+.left-header{
+height: 12rem;
+display: flex;
+grid-area: menu;
+align-items: center;
+justify-content: space-around;
+background-color: #333652;
+}
+
+.left-header img{
+width: 12rem;
+height: 12rem;
+}
+
+.left-header div{
+height: 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 2rem;
+padding-inline: 2rem;
+}
+
+.left-header div a{
+text-decoration: none;
+}
+
+.left-header div a h2{
+font-size: 2rem;
+color: #E9EAEC;
+cursor: pointer;
+}
+
+.right-header{
+height: 12rem;
+display: flex;
+grid-area: main;
+align-items: center;
+justify-content: center;
+background-color: #E9EAEC;
+}
+
+.right-header div{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.right-header div a{
+text-decoration: none;
+background-color: #333652;
+cursor: pointer;
+color: #E9EAEC;
+border-radius: 1rem;
+padding: 1rem 2rem;
+}
+
+.right-header div a h2{
+}
+
+.right-header img{
+width: 8rem;
+height: 8rem;
+padding-inline: 1.5rem;
+}
+
+/* - - - MAIN - - - */
+
+main{
+position: relative;
+top: 21rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+/* INTRO */
+
+main .intro{
+width: 90%;
+display: flex;
+justify-content: center;
+background-color: #E9EAEC;
+margin-bottom: 3rem;
+}
+
+.intro span{
+z-index: 3;
+position: absolute;
+top: -0.6rem;
+left: 12rem;
+font-size: 2.2rem;
+font-weight: bold;
+padding: 0.8rem 1.6rem;
+background-color: #333652;
+border-radius: 1rem;
+color: #E9EAEC;
+}
+
+.intro div{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: justify;
+font-size: 1.7rem;
+font-weight: bold;
+margin: 2.5rem;
+padding: 0.5rem 3rem;
+background-color: #D1D1D1;
+color: #333652;
+}
+
+.intro div img{
+width: 15rem;
+padding-inline: 3rem 0.5rem;
+}
+
+/* SERVICIOS */
+
+main div{
+width: 90%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: #E9EAEC;
+padding-block: 1rem;
+}
+
+.line1{
+height: 0.8rem;
+width: 85%;
+margin-bottom: 1rem;
+background-color: #D1D1D1;
+border: none;
+}
+
+.title_serv{
+height: 5rem;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.div_t1{
+width: 1.5%;
+margin-inline: 0.8rem;
+background-color: #FAD02C;
+}
+
+.div_t2{
+width: 2%;
+background-color: #333652;
+}
+
+.div_t3{
+width: 4%;
+margin-inline: 0.8rem;
+background-color: #90ADC6;
+}
+
+.div_t4{
+width: 50%;
+display: flex;
+font-size: 2rem;
+font-weight: bold;
+color: #E9EAEC;
+align-items: center;
+justify-content: center;
+background-color: #333652;
+}
+
+.serv{
+flex-grow: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-self: center;
+margin-bottom: 1.5rem;
+}
+
+.serv table{
+padding-inline: 3rem;
+margin-inline: 2.5rem;
+border-spacing: 0rem 2.5rem;
+background-color: #D1D1D1;
+}
+
+.serv table tr td{
+text-align: center;
+}
+
+.serv table tr td img{
+width: 20rem;
+height: 20rem;
+padding: 2rem;
+margin-top: 1rem;
+background-color: #E9EAEC;
+border-radius: 0.8rem;
+box-shadow: 0rem 0rem 2rem -0.8rem #535858;
+}
+
+.serv table tr td span{
+font-size: 2rem;
+font-weight: bold;
+color: #333652;
+}
+
+/* PRECIOS & CONTACTO */
+
+main article{
+width: 90%;
+display: flex;
+margin-top: 6rem;
+margin-bottom: 5rem;
+}
+
+main article .cont{
+width: 35%;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+background-color: #333652;
+padding-block: 0rem;
+}
+
+.cont div{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+padding-block: 0rem;
+}
+
+.cont div span{
+padding-block: 1.5rem;
+padding-inline: 7rem;
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+color: #333652;
+background-color: #FAD02C;
+}
+
+.cont_tabl{
+background-color: transparent;
+}
+
+.cont_tabl table{
+width: 100%;
+border-spacing: 2.5rem 0.5rem;
+}
+
+.cont_tabl table tr td{
+font-size: 1.7rem;
+color: #E9EAEC;
+}
+
+.cont_tabl table tr td span{
+font-size: 1.7rem;
+background-color: transparent;
+color: #E9EAEC;
+padding: 0rem;
+}
+
+.cont_tabl table tr td img{
+width: 8rem;
+height: 8rem;
+}
+
+.cont_last{
+position: absolute;
+bottom: 0rem;
+width: 100%;
+height: 7rem;
+background-color: #90ADC6;
+}
+
+main article .prec{
+width: 65%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #E9EAEC;
+}
+
+.img_prec{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.img_prec img{
+height: 12rem;
+width: 12rem;
+padding-block: 1rem;
+}
+
+.text_prec{
+width: calc(100% - 5rem);
+box-sizing: border-box;
+margin-inline: 2.5rem;
+padding: 2rem 3rem;
+text-align: justify;
+font-size: 1.7rem;
+font-weight: bold;
+background-color: #D1D1D1;
+color: #333652;
+}
+
+/* - - - FOOTER - - - */
+
+footer{
+width: 100%;
+height: 15rem;
+display: flex;
+justify-content: space-between;
+background-color: #333652;
+}
+
+footer img{
+width: 15rem;
+padding-right: 40rem;
+}
+
+footer div{
+width: 40rem;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url('fondo.png');
+background-position: center;
+}
+
+footer div span{
+padding: 0.7rem 1.6rem;
+background-color: #E9EAEC;
+border-radius: 1rem;
+font-size: 2rem;
+font-weight: bold;
+color: #333652;
+cursor: pointer;
+}
+
+/* - - - EVENTOS - - - */
+
+.right-header div a:hover{
+color: #333652;
+background-color: #90ADC6;
+}
+
+.serv table tr td img:hover{
+transform: scale(1.05);
+}
+
+/*
+Azul Marino: #333652;
+Amarillo: #FAD02C;
+Celeste: #90ADC6;
+Blanco: #E9EAEC;
+Fondo: #D1D1D1;
+Sombras: #202442,
+*/
